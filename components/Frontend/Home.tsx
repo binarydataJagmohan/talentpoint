@@ -26,9 +26,19 @@ export default function Home() {
                <div className='form-card'>
                  <div className='row'>
                     <div className='col-sm-5'>
-                        
+                     <div>
+                      <div className="input-group mb-3">
+                        <span className="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" className="form-control" placeholder="Job Title, Keyword, Company or Phrase" aria-label="Username" aria-describedby="basic-addon1" />
+                      </div>
+                     </div>
                     </div>
-                    <div className='col-sm-5'></div>
+                    <div className='col-sm-5'>
+                     <div className="input-group mb-3">
+                        <span className="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" className="form-control" placeholder="Job Title, Keyword, Company or Phrase" aria-label="Username" aria-describedby="basic-addon1" />
+                      </div>
+                    </div>
                     <div className='col-sm-2'></div>
                  </div>
                </div>
