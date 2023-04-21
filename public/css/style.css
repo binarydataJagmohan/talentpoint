@@ -4062,8 +4062,134 @@ ul.list-loc li.active a::after {
 form.form-get.w-574 {
     max-width: 574px;
 }
-
-
+.close-x {
+    background: var(--background-color_4);
+    box-shadow: 0px 2px 5px rgba(21, 21, 21, 0.12), 0px 4px 8px -3px rgba(21, 21, 21, 0.15), 0px 14px 20px -2px rgba(21, 21, 21, 0.16);
+    border-radius: 16px;
+    border: none;
+    width: 35px;
+    height: 35px;
+    color: var(--color_1);
+    font-size: var(--font_22);
+    padding: 4px 5px;
+}
+.popup-right {
+    background-image: url(../images/popup-right.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 16px 16px 0;
+}
+.br-16 {
+    border-radius: 16px !important;
+}
+.popup-left-text {
+    padding: 20px;
+}
+.popup-left-text h3 {
+    font-weight: var(--font_weight_700);
+    font-size: var(--font_37);
+    line-height: var(--font_37_line-height);
+    color: var( --color_8);
+}
+.popup-left-text p {
+    font-family: 'Open Sans';
+    font-weight: var(--font_weight_400);
+    font-size: var(--font_16);
+    line-height: var(--font_16_line-height);
+    color: var( --color_19);
+}
+.popup-0EB1D2 h4 {
+    font-family: 'Open Sans'; 
+    font-weight: var(--font_weight_700);
+    font-size: var(--font_18);
+    line-height: var(--font_18_line-height);
+    color: var( --color_9);
+}
+.popup-0EB1D2::before {
+    background: var(--color_28);
+    width: 12px;
+    height: 12px;
+    left: 11px;
+}
+.popup-0EB1D2::after { 
+    border-left: 2px dashed var(--color_28) !important; 
+}
+.popup-0EB1D2.line-none::after{display: none;}
+.left-list-form.popup-0EB1D2 {
+    padding: 20px 0 7px 40px;
+}
+.d-c-4 {
+    background: linear-gradient(92.84deg, #FFB8A8 0.42%, #FF6847 100%);
+}
+.explore-jobs a { 
+    font-weight: var(--font_weight_700);
+    font-size: var(--font_16);
+    line-height: var(--font_16_line-height);
+    color: var(--color_6);
+    text-decoration: underline 2px;
+}
+ul.blue-text-line {
+    padding: 0;
+    margin: 0;
+}
+ul.blue-text-line li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 15px;
+}
+ul.blue-text-line li a {
+    font-weight: var(--font_weight_700);
+    font-size: var(--font_16);
+    line-height: var(--font_16_line-height);
+    color: var( --color_6);
+    text-decoration: underline 2px;
+}
+.em-name {
+    font-weight: var(--font_weight_700);
+    font-size: var(--font_26);
+    line-height: var(--font_26_line-height);
+    color: var(--color_9);
+    margin: 0;
+}
+.em-work {
+    font-weight: var(--font_weight_500);
+    font-size: var(--font_22);
+    line-height: var(--font_22_line-height);
+    color: var( --color_1);
+    margin: 0;
+}
+ .c-4D4D4D {
+    color: var(--color_19) !important;
+}
+.c-000 {
+    color: var(--color_47);
+}
+.f-18 {
+    font-family: 'Open Sans'; 
+    font-weight: var(--font_weight_700);
+    font-size: var(--font_18);
+    line-height: var(--font_18_line-height);
+    color: var(--color_9);
+    margin: 0;
+}
+p.f-16.w-600 {
+    font-weight: 600 !important;
+}
+p.f-16.c-0055BA {
+    color: var(--color_1);
+    margin: 5px 0 !important;
+}
+p.f-16.c-999999 {
+    color: var(--color_10);
+}
+.skills {
+    margin: 0;
+    padding: 0;
+}
+.skills li {
+    display: inline-block;
+    padding: 0 1% 0 0;
+}
 
 
 
@@ -4143,7 +4269,12 @@ form.form-get.w-574 {
     .left-list-form {
         padding: 20px 0 7px 40px; 
     }
-
+    .profile-checklist { 
+        margin: 0 auto;
+    }
+    .tab-add-sp {
+        margin-top: 20px;
+    }
 
 }
 
@@ -4243,6 +4374,21 @@ form.form-get.w-574 {
 h1.data {
     font-size: var(--font_31);
 }
+.popup-left-text h3 { 
+    font-size: var(--font_33);
+    line-height: var(--font_33_line-height); 
+}
+.m-column-reverse {
+    flex-direction: column-reverse;
+}
+.m-m-0 li {
+    margin-bottom: 0 !important;
+}
+ul.blue-text-line li a { 
+    font-size: var(--font_14);
+    line-height: var(--font_14_line-height); 
+}
+
 
 }
 
@@ -4253,6 +4399,9 @@ h1.data {
     .c-n { 
         font-size: var(--font_12);
         line-height: var(--font_12_line-height);
+    }
+    .profile-checklist {
+        width: 100%;
     }
 
 }

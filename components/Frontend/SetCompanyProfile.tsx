@@ -57,7 +57,9 @@ export default function SetCompanyProfile() {
                               <option>51-100 3</option>
                             </select>  
 
-                            <label>About Company</label>
+                            <label>About Company Editor</label>
+                            <input type="text"   className='big-input mb-4'/>
+
                             
                            
                            <div className='row'>

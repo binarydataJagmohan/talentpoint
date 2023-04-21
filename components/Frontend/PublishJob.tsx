@@ -29,14 +29,14 @@ export default function PublishJob() {
                       <div className='tab-none gap-box'></div>
                   </div>
                   <div className='col-lg-7 col-md-12'>
-                    <div className='form-pages  form-left-right-add-sp pt-5 pb-5'>
+                    <div className='form-pages   form-left-right-add-sp pt-5 pb-5'>
                       <h4>Publish a Job</h4> 
                       <p className='f-16-form'>Enter basic job details and get started right away.</p>
-                      <form className='form-get w-574 mt-4'> 
+                      <form className='form-get w-574  mt-4'> 
                       <label>Job Title*</label>
                       <input type="text" placeholder='Title' className='big-input mb-4'/> 
 
-                      <label>Job Description</label>
+                      <label>Job Description Editor</label>
                       <input type="text"   className='big-input mb-4'/> 
 
                       <label>Type of Position*</label> 
@@ -76,30 +76,34 @@ export default function PublishJob() {
 
                       <div className='row'>
                          <div className='col-12'><label>Monthly Fixed Salary</label> </div>
-                        <div className='col-2'> 
+                        <div className='col-sm-3 col-4'> 
                         <select className="big-select">
                           <option>AED</option>
                           <option>AED 2</option>
                           <option>AED 3</option>
                         </select>
                         </div>
-                        <div className='col-5'> 
-                         <input type="text" placeholder='Min' className='big-input mb-4'/> 
+                        <div className='col-sm-4 col-4'> 
+                         <input type="text" placeholder='Min' className='big-input '/> 
                         </div>
-                        <div className='col-5'>
-                         <input type="text" placeholder='Max' className='big-input mb-4'/> 
+                        <div className='col-sm-5 col-4'>
+                         <input type="text" placeholder='Max' className='big-input '/> 
                         </div>
                       </div>
 
+                      <label>Available Vacancies*</label>
+                      <input type="text" placeholder='1' className='big-input mb-4'/> 
 
-                           <div className='row'>
-                            <div className='col-3'>
-                              <button className="btn login  w-100 mt-4">Back</button>
-                            </div>
-                            <div className='col-9'>
-                               <button className="btn-a primary-size-16 b-0 btn-bg-0055BA w-100 mt-4">Continue</button>
-                            </div>
-                           </div>
+                      <label className='check-label'>  <input type="checkbox" className="w-16"/> Hide Employer Details</label>
+
+                      <div className='row'>
+                      <div className='col-3'>
+                        <button className="btn login  w-100 mt-4">Back</button>
+                      </div>
+                      <div className='col-9'>
+                          <button className="btn-a primary-size-16 b-0 btn-bg-0055BA w-100 mt-4">Continue</button>
+                      </div>
+                      </div>
 
                            <p className='text-center skip mt-4'><a href="#">Skip</a></p>
                           
