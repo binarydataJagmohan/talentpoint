@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'; 
 import { useRouter } from "next/router";
 
-export default function SetCompanyProfile() {
+export default function AddTeamMembers() {
     return (
         <>
            <section className='banner-part-home'>
@@ -30,36 +30,15 @@ export default function SetCompanyProfile() {
                   </div>
                   <div className='col-lg-7 col-md-12'>
                     <div className='form-pages  form-left-right-add-sp pt-5 pb-5'>
-                      <h4>Set company profile</h4> 
+                      <h4>Add team members</h4> 
+                      <p className='f-16-form'>Enter the email of your team members and we will send them an invite.</p>
                       <form className='form-get mt-4'> 
-                          
-                          <label>Website*</label>
-                          <input type="text" placeholder='https://www.website.com' className='big-input mb-4'/> 
-
-                          <label>Location*</label>
-                            <select className="big-select">
-                              <option>United Arab Emirates</option>
-                              <option>United Arab Emirates 2</option>
-                              <option>United Arab Emirates 3</option>
-                            </select> 
-
-                            <label>Sector*</label>
-                            <select className="big-select">
-                              <option>Software</option>
-                              <option>Software 2</option>
-                              <option>Software 3</option>
-                            </select> 
-
-                            <label>Number of Employees*</label>
-                            <select className="big-select">
-                              <option>51-100</option>
-                              <option>51-100 2</option>
-                              <option>51-100 3</option>
-                            </select>  
-
-                            <label>About Company</label>
-                            
                            
+                      <input type="text" placeholder='team-mate@gmail.com' className='big-input mb-4'/> 
+                      <input type="text" placeholder='team-mate@gmail.com' className='big-input mb-4'/> 
+                      <input type="text" placeholder='team-mate@gmail.com' className='big-input mb-4'/>  
+                      <p className='f-16-form add-member'><a href="#"><i className="fa-solid fa-plus"></i> Add Team Member</a></p> 
+
                            <div className='row'>
                             <div className='col-3'>
                               <button className="btn login  w-100 mt-4">Back</button>
@@ -68,6 +47,8 @@ export default function SetCompanyProfile() {
                                <button className="btn-a primary-size-16 b-0 btn-bg-0055BA w-100 mt-4">Continue</button>
                             </div>
                            </div>
+
+                           <p className='text-center skip mt-4'><a href="#">Skip</a></p>
                           
                       </form>
                     </div>
