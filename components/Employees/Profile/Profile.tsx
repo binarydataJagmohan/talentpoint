@@ -8,8 +8,8 @@ export default function Profile() {
             <div className='row m-column-reverse'>
                 <div className='col-sm-7'>
                     <ul className='list-loc m-m-0 mt-4'>
-                        <li className='active'><a href="#">Overview</a></li>
-                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Overview</a></li>
+                        <li className='active'><a href="#">Profile</a></li>
                         <li><a href="#">Preferences</a></li> 
                     </ul>
                 </div>
@@ -21,61 +21,110 @@ export default function Profile() {
                 </div>
             </div>
             
-             <div className='data-management'>
-             <div className='work-experience-fieild'>
+             <div className='data-management m-p-10'>
+             <div className='work-experience-fieild m-p-10'>
               <div className='row'>
                 <div className='col-lg-3 col-md-3'>
                     <div className='left-text-fieild'>
-                      <h3>What employers will see</h3>
-                      <p className='c-747474'>A glimpse into what recruiters look at on your profile</p>
+                      <h3 className=' m-center'>About</h3>
+                      <p className='c-747474  m-center'>Tell us about yourself</p>
                     </div>
                 </div>
-                <div className='col-lg-9 col-md-9'>
+                <div className='col-lg-9 col-md-9'> 
                     <div className='row'>
-                     <div className='col-sm-2 col-3'>
+                     <div className='col-lg-2 col-md-3 col-12'>
                         <div className="dash-profile-img mb-4 m-auto">
+                            <p className='f-12 c-2C2C2C m-center'>Profile Picture</p>
                          <img src={process.env.NEXT_PUBLIC_BASE_URL+'images/Avatars-2.png'} alt="Avatars-2"  /> 
-                            <a href="#"><i className="fa-solid fa-pen"></i> </a>
+                         
                         </div> 
                      </div>
-                     <div className='col-sm-10 col-9'>
-                        <h4 className='em-name'>Alan Moore</h4>
-                        <h5 className='em-work'>Software Engineer @ Meta</h5>
-                        <p className='f-12'><i className="fa-solid fa-location-dot"></i> Dubai, United Arab Emirates</p>
+                     <div className='col-lg-10 col-md-9 col-12'>
+                         <div className='uploade-btn'>
+                            <input type='file' /> 
+                            <button className="btn-a primary-size-16 btn-bg-0055BA mt-5 mb-4 mobile-m-0"><i className="fa-solid fa-upload"></i> Upload A New Photo</button>
+                         </div>
+                     </div> 
+                    </div>
+                    <form className='form-experience-fieild'>
+                    <label>Your Name*</label>
+                    <input type='text' placeholder='Alan Moore' className='fild-des'/>
+
+                    <div className='row'>
+                     <div className='col-sm-6'>
+                      <label>Email ID*</label>
+                      <input type='text' placeholder='alanmoore@gmail.com' className='fild-des'/>
                      </div>
-                     <div className='col-12'>
-                        <p className='f-16 c-4D4D4D'>B. Tech from Georgia Institute of Technology, Coding wizard, working on an AI tool to assist developers, previously worked at Meta.</p>
+                     <div className='col-sm-6'>
+                      <label>Contact Number*</label>
+                      <input type='number' placeholder='(+971) 123 – 456 – 7890' className='fild-des'/> 
                      </div>
                     </div>
-                    <br/>
-                    <p className='f-12 c-000 mb-0'>Work Experience</p>
-                    <p className='f-18 '>Software Engineer</p>
-                    <p className='f-16 c-0055BA w-600 '>Meta</p>
-                    <p className='f-16 c-999999'>12/2020 - 02/2023</p>
-                    <p className='f-16 c-4D4D4D'> Lorem ipsum dolor sit amet consectetur. Quis elementum mattis odio orci eu pellentesque odio velit. Egestas neque ipsum aliquet auctor dis pulvinar habitant. Id consectetur suspendisse scelerisque mattis mattis blandit nisl dolor sit. Faucibus enim ornare amet sit arcu consequat.</p>
 
-                    <p className='f-18 mt-4'>Junior Software Engineer</p>
-                    <p className='f-16 c-0055BA w-600 '>Twitter</p>
-                    <p className='f-16 c-999999'>06/2020 - 12/2020</p>
+                    <div className='row'>
+                     <div className='col-sm-6'>
+                      <label>Date of Birth*</label>
+                      <input type='date' className='fild-des'/>
+                     </div>
+                     <div className='col-sm-6'>
+                      <label>Gender</label>
+                       <select  className='fild-des'>
+                        <option>Male</option>
+                        <option>Female</option>
+                       </select> 
+                     </div>
+                    </div>
+                    
+                    <label>Where are you currently based?*</label>
+                    <select  className='fild-des'>
+                        <option>Dubai</option>
+                        <option>Dubai 2</option>
+                    </select>
 
-                    <br/>
-                    <p className='f-12 c-000 '>Education</p>
+                    <div className='row'>
+                     <div className='col-sm-6'>
+                       <label>Your Current Role*</label>
+                       <select  className='fild-des'>
+                        <option>Software Engineer</option>
+                        <option>Software Engineer 2</option>
+                       </select> 
+                     </div>
+                     <div className='col-sm-6'>
+                      <label>Years of Experience</label>
+                       <select  className='fild-des'>
+                        <option>2-3 Years</option>
+                        <option>2-3 Years</option>
+                       </select> 
+                     </div>
+                    </div>
 
-                    <p className='f-18 mt-4'>Master of Technology</p>
-                    <p className='f-16 c-0055BA w-600 '>Master of Technology</p>
-                    <p className='f-16 c-999999'>06/2017 - 06/2020</p>
+                    <div className='row'>
+                     <div className='col-sm-6'>
+                       <label>Current Salary</label>
+                       <select  className='fild-des'>
+                        <option>AED 10000</option>
+                        <option>Software Engineer 2</option>
+                       </select> 
+                     </div>
+                     <div className='col-sm-6'>
+                      <label>Desired Salary</label>
+                       <select  className='fild-des'>
+                        <option>AED</option>
+                        <option>15000</option>
+                       </select> 
+                     </div>
+                    </div>
 
-                    <br/>
-                    <p className='f-12 c-000 '>Skills</p>
-                    <ul className='skills'>
-                        <li><p className="cat">JavaScript</p></li>
-                        <li><p className="cat">C++</p></li>
-                        <li><p className="cat">Slack</p></li>
-                        <li><p className="cat">SQL</p></li>
-                        <li><p className="cat">Python</p></li>
-                        <li><p className="cat">Java</p></li>
-                        <li><p className="cat">HTML/CSS</p></li>
-                    </ul>
+                    <label>Your Bio**</label>
+                    <textarea placeholder='B. Tech from Georgia Institute of Technology, Coding wizard, working on an AI tool to assist developers, previously worked at Meta.' className='fild-des'></textarea>                
+
+                    <div className='text-right mt-3'>
+                      <button className='cancel'>Cancel</button>
+                      <button className='save'>Save</button>
+                    </div>
+
+                  </form>
+                     
                 </div>
               </div>
             </div>
